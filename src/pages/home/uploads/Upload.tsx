@@ -97,6 +97,15 @@ const Upload = () => {
     for await (const ms of asyncPool(3, files, handleFile)) {
       console.log(ms)
     }
+    // async function yourFunction() {
+    //   const results = await asyncPool(3, files, handleFile);
+    
+    //   for (const ms of results) {
+    //     console.log(ms);
+    //   }
+    // }
+    
+    // yourFunction();
   }
   const setUpload = (path: string, key: keyof UploadFileProps, value: any) => {
     setUploadFiles("uploads", (upload) => upload.path === path, key, value)

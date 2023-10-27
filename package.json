@@ -58,6 +58,7 @@
     "artplayer-plugin-danmuku": "^4.4.8",
     "axios": "^1.0.0",
     "copy-to-clipboard": "^3.3.2",
+    "esbuild": "^0.19.5",
     "flv.js": "^1.6.2",
     "hls.js": "^1.2.1",
     "lightgallery": "^2.5.0",

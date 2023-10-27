@@ -5,6 +5,10 @@ import legacy from "@vitejs/plugin-legacy"
 import { dynamicBase } from "vite-plugin-dynamic-base"
 
 export default defineConfig({
+  server: {
+    host: "172.16.12.84",
+    port: 5173
+  },
   resolve: {
     alias: {
       "~": path.resolve(__dirname, "src"),
@@ -25,7 +29,7 @@ export default defineConfig({
   base: process.env.NODE_ENV === "production" ? "/__dynamic_base__/" : "/",
   // base: "/",
   build: {
-    // target: "es2015", //next
+    target: "esnext", //next
     // polyfillDynamicImport: false,
   },
   // experimental: {
